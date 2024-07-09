@@ -1,0 +1,21 @@
+{
+  "name": "landing-page-service",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "scss": "^0.2.4",
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.1"
+  }
+}
