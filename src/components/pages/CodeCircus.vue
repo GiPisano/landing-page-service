@@ -46,7 +46,7 @@ export default {
     <section id="circus-cards">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 card p-2 text-center" v-for="card in cards">
+          <div class="col-md-3 card text-center" v-for="card in cards">
             <h3>
               {{ card.title }}
             </h3>
@@ -73,15 +73,30 @@ export default {
   }
 }
 
+#circus-cards {
+  .row {
+    div {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #circus-cards {
+    margin: 50px 10px;
+    .row {
+      gap: 40px;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .circus {
     position: relative;
-    .container {
-      .row {
-        gap: 10px;
-        flex-wrap: nowrap;
-      }
-    }
     #circus-cards {
       position: absolute;
       bottom: -50px;
