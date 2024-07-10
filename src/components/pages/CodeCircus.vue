@@ -86,6 +86,13 @@ export default {
       position: absolute;
       bottom: -50px;
       width: 100%;
+      .row {
+        justify-content: space-between;
+      }
+      .card {
+        flex: 1 1 22%;
+        margin: 0 10px;
+      }
     }
   }
 }
