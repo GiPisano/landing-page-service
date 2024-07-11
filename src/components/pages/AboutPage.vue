@@ -4,10 +4,8 @@
   <section id="about-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <div class="circle">
-            <img src="../../assets/images/about-img.jpg" alt="" />
-          </div>
+        <div class="col-md-6 about-img">
+          <img src="../../assets/images/about-img.jpg" alt="" />
         </div>
         <div class="col-md-6">
           <div class="card">
@@ -37,12 +35,10 @@
   .row {
     justify-content: center;
     align-items: center;
-    div {
-      .circle {
-        object-fit: cover;
-        img {
-          border-radius: 50%;
-        }
+    .about-img {
+      max-width: 500px;
+      img {
+        border-radius: 50%;
       }
     }
   }
