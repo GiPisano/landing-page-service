@@ -85,6 +85,7 @@ export default {
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   #circus-cards {
     margin: 50px 10px;

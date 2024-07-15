@@ -2,6 +2,17 @@
 @use './partials/mixins.scss' as *;
 @import "bootstrap/scss/bootstrap";
 
+:root{
+    --red: #EC6C5B;
+    --light-red: rgb(251, 234, 230);
+    --green: #4CC083;
+    --light-green: #E2F3F0;
+    --gray: rgb(110, 117, 125);
+    --light-gray: rgb(225, 229, 235);
+    --yellow: rgb(239, 193, 112);
+    --light-yellow: rgb(252, 238, 214);
+}
+
 *{
     margin: 0;
     padding: 0;
