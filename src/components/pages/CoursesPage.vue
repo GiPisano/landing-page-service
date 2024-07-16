@@ -174,8 +174,8 @@ export default {
 
   <section class="online-courses container">
     <div class="row gx-3 gy-5">
-      <div class="col-md-3 wh-100" v-for="course in onlineCourses">
-        <div class="card">
+      <div class="col-md-3" v-for="course in onlineCourses">
+        <div class="card h-100">
           <div class="card-header">
             <img :src="buildImgPath(course.img)" alt="" />
             <p v-if="course.badge" class="badge">{{ course.badge }}</p>
