@@ -1,7 +1,7 @@
 <script>
 // add icon for each paragraph inside cols
 document.addEventListener("DOMContentLoaded", () => {
-  const paragraphs = document.querySelectorAll(".col-md-6 div");
+  const paragraphs = document.querySelectorAll(".about-courses-text div");
   paragraphs.forEach((paragraph) => {
     paragraph.classList.add("d-flex");
     const icon = document.createElement("span");
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <p class="text-center">Valori aggiunti</p>
     <h2 class="text-center">I Nostri Corsi Piacciono Perchè...</h2>
     <div class="row h-100">
-      <div class="col-md-6">
+      <div class="col-md-6 about-courses-text">
         <div>
           <p>
             Ridendo, l'apprendimento della programmazione diventaun'esperienza
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </p>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 about-courses-text">
         <div>
           <p>
             Connettiti con altri studenti appassionati che condividono il tuo
@@ -75,68 +75,71 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </div>
     </div>
+  </div>
 
-    <section>
-      <div class="timeline">
-        <div class="container-timeline left">
-          <div class="content">
-            <div class="card">
-              <div class="card-header">
-                <h2>Primo Step</h2>
-              </div>
-              <div class="card-body">
-                <p>
-                  Iscriviti al nostro sito e crea il tuo profilo personale. In
-                  pochi minuti sarai pronto per esplorare il nostro mondo di
-                  corsi di programmazione divertenti e stravaganti. Non
-                  aspettare, il viaggio nel mondo del coding comincia ora!
-                </p>
-                <div class="btn">REGISTRATI</div>
-              </div>
+  <section>
+    <div class="timeline">
+      <div class="container-timeline left">
+        <i class="fa-solid fa-handshake-simple"></i>
+        <div class="content">
+          <div class="card">
+            <div class="card-header">
+              <h2>Primo Step</h2>
             </div>
-          </div>
-        </div>
-        <div class="container-timeline right">
-          <div class="content">
-            <div class="card">
-              <div class="card-header">
-                <h2>Segui i Corsi Online</h2>
-              </div>
-              <div class="card-body">
-                <p>
-                  Partecipa ai nostri corsi online interattivi, progettati per
-                  essere coinvolgenti e pieni di risate. Impara nuove competenze
-                  dai nostri istruttori eccentrici e divertiti mentre codifichi,
-                  con progetti unici e sfide creative. Ogni lezione è
-                  un'avventura!
-                </p>
-                <div class="btn">PARTECIPA</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container-timeline left">
-          <div class="content">
-            <div class="card">
-              <div class="card-header">
-                <h2>Ricevi Una Pacca Sulla Spalla</h2>
-              </div>
-              <div class="card-body">
-                <p>
-                  Al termine di ogni corso, riceverai il riconoscimento per il
-                  tuo impegno e le tue abilità. Condividi i tuoi successi con la
-                  nostra comunità globale e goditi una meritata pacca sulla
-                  spalla. Sei pronto a mostrare al mondo il tuo talento nel
-                  coding!
-                </p>
-                <div class="btn">CERTIFICATO</div>
-              </div>
+            <div class="card-body">
+              <p>
+                Iscriviti al nostro sito e crea il tuo profilo personale. In
+                pochi minuti sarai pronto per esplorare il nostro mondo di corsi
+                di programmazione divertenti e stravaganti. Non aspettare, il
+                viaggio nel mondo del coding comincia ora!
+              </p>
+              <div class="btn">REGISTRATI</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </div>
+      <div class="container-timeline right">
+        <i class="fa-solid fa-dumbbell"></i>
+        <div class="content">
+          <div class="card">
+            <div class="card-header">
+              <h2>Segui i Corsi Online</h2>
+            </div>
+            <div class="card-body">
+              <p>
+                Partecipa ai nostri corsi online interattivi, progettati per
+                essere coinvolgenti e pieni di risate. Impara nuove competenze
+                dai nostri istruttori eccentrici e divertiti mentre codifichi,
+                con progetti unici e sfide creative. Ogni lezione è
+                un'avventura!
+              </p>
+              <div class="btn">PARTECIPA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-timeline left">
+        <i class="fa-solid fa-laptop-code"></i>
+        <div class="content">
+          <div class="card">
+            <div class="card-header">
+              <h2>Ricevi Una Pacca Sulla Spalla</h2>
+            </div>
+            <div class="card-body">
+              <p>
+                Al termine di ogni corso, riceverai il riconoscimento per il tuo
+                impegno e le tue abilità. Condividi i tuoi successi con la
+                nostra comunità globale e goditi una meritata pacca sulla
+                spalla. Sei pronto a mostrare al mondo il tuo talento nel
+                coding!
+              </p>
+              <div class="btn">CERTIFICATO</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 <style lang="scss" scoped>
 .row {
@@ -159,12 +162,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 .card-header {
   background-color: var(--red);
+  color: white;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -186,20 +194,28 @@ document.addEventListener("DOMContentLoaded", () => {
   position: relative;
   background-color: inherit;
   width: 50%;
+  margin: 40px 0;
 }
 
 /* The circles on the timeline */
-.container-timeline::after {
-  content: "";
+.container-timeline i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 40px;
   height: 40px;
   right: -20px;
   background-color: var(--red);
-  //   border: 4px solid #ff9f55;
-  top: 10px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
+  font-size: 20px;
+  top: 10px;
+}
+
+.right i {
+  left: -20px;
+  right: auto;
 }
 
 /* Place the container-timeline to the left */
@@ -240,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
   border-color: transparent var(--red) transparent var(--red);
 }
 
-/* Fix the circle for containers on the right side */
+/* Add circle for containers on the right side */
 .right::after {
   left: -20px;
 }
@@ -252,21 +268,19 @@ document.addEventListener("DOMContentLoaded", () => {
   border-radius: 6px;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
+/* Media queries - Responsive timeline on screens less than 768px wide */
 @media screen and (max-width: 768px) {
   /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
   }
 
-  /* Full-width containers */
   .container-timeline {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-  /* Make sure that all arrows are pointing leftwards */
   .container-timeline::before {
     left: 60px;
     border: medium solid white;
@@ -274,15 +288,18 @@ document.addEventListener("DOMContentLoaded", () => {
     border-color: transparent var(--red) transparent var(--red);
   }
 
-  /* Make sure all circles are at the same spot */
   .left::after,
   .right::after {
     left: 10.5px;
   }
 
-  /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
+  }
+
+  .container-timeline i {
+    left: 10px;
+    right: auto;
   }
 }
 </style>

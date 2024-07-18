@@ -39,8 +39,8 @@ export default {
     <h2 class="text-center">I nostri Insegnanti</h2>
 
     <div class="row">
-      <div class="col h-100" v-for="techer in teachers">
-        <div class="card">
+      <div class="col" v-for="techer in teachers">
+        <div class="card h-100">
           <div class="card-header">
             <img :src="`src/assets/images/${techer.img}`" alt="" />
           </div>
