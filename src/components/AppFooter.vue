@@ -216,7 +216,7 @@ export default {
 }
 
 #footer {
-  padding: 150px 0;
+  margin: var(--section-margin);
   h3 {
     font-size: 20px;
     font-weight: bolder;

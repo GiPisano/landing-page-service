@@ -48,46 +48,52 @@ export default {
 <template>
   <div class="container-section">
     <div class="container">
-      <Swiper
-        :slidesPerView="1"
-        :spaceBetween="10"
-        :pagination="{
-          clickable: true,
-        }"
-        :breakpoints="{
-          '640': {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          '767': {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          '1024': {
-            slidesPerView: 3,
-            spaceBetween: 50,
-          },
-        }"
-        :modules="modules"
-        class="mySwiper"
-      >
-        <SwiperSlide v-for="review in reviews">
-          <div class="card">
-            <div class="card-header">
-              {{ review.text }}
-            </div>
-            <div class="card-body">
-              <div class="img-review">
-                <img :src="`src/assets/images/${review.img}`" alt="" />
+      <div class="padding">
+        <div class="text-center my-5">
+          <p class="red">Cosa dicono gli studenti</p>
+          <h2>Recensioni</h2>
+        </div>
+        <Swiper
+          :slidesPerView="1"
+          :spaceBetween="10"
+          :pagination="{
+            clickable: true,
+          }"
+          :breakpoints="{
+            '640': {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            '767': {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            '1024': {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }"
+          :modules="modules"
+          class="mySwiper"
+        >
+          <SwiperSlide v-for="review in reviews">
+            <div class="card">
+              <div class="card-header">
+                {{ review.text }}
               </div>
-              <div class="info">
-                <p class="name">{{ review.name }}</p>
-                <p>{{ review.role }}</p>
+              <div class="card-body">
+                <div class="img-review">
+                  <img :src="`src/assets/images/${review.img}`" alt="" />
+                </div>
+                <div class="info">
+                  <p class="name">{{ review.name }}</p>
+                  <p>{{ review.role }}</p>
+                </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   </div>
 </template>
@@ -106,9 +112,9 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.mySwiper {
-  padding-top: 200px;
-  padding-bottom: 200px;
+.padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .swiper-slide img {
   display: block;

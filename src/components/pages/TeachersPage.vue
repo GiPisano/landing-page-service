@@ -35,22 +35,47 @@ export default {
 </script>
 <template>
   <div class="container">
-    <p class="text-center">Stalkera i nostri insegnanti</p>
-    <h2 class="text-center">I nostri Insegnanti</h2>
-
+    <div class="text-center my-5">
+      <p class="red">Stalkera i nostri insegnanti</p>
+      <h2>I nostri Insegnanti</h2>
+    </div>
     <div class="row">
       <div class="col" v-for="techer in teachers">
-        <div class="card h-100">
+        <div class="card h-100 text-center">
           <div class="card-header">
             <img :src="`src/assets/images/${techer.img}`" alt="" />
           </div>
           <div class="card-body">
-            <h5 class="text-center">{{ techer.role }}</h5>
-            <p class="text-center">{{ techer.name }}</p>
+            <p class="techer-name">{{ techer.name }}</p>
+            <p class="red">{{ techer.role }}</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container {
+  margin: var(--section-margin);
+}
+.card {
+  border: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  .card-header {
+    background-color: white;
+    border: 0;
+    img {
+      border-radius: 15px;
+    }
+  }
+  .card-body {
+    p {
+      margin: 0;
+    }
+    .techer-name {
+      font-weight: 600;
+    }
+  }
+}
+</style>

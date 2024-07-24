@@ -31,10 +31,10 @@
         <a href="#"><i class="fa-solid fa-pen-to-square"></i> REGISTRATI</a>
       </div>
       <div class="icons">
-        <i class="fa-regular fa-circle-user"></i>
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-bag-shopping"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+        <a href="#"><i class="fa-regular fa-heart"></i></a>
+        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
       </div>
     </div>
     <div
@@ -109,10 +109,18 @@ header {
     gap: 10px;
     font-size: 20px;
     flex-wrap: wrap;
+    a {
+      text-decoration: none;
+      color: black;
+    }
   }
 
   .menu-items {
     display: none;
+    a {
+      text-decoration: none;
+      color: black;
+    }
   }
 
   .menu-button {
@@ -127,9 +135,8 @@ header {
     justify-content: end;
   }
 
-  a {
-    text-decoration: none;
-    color: white;
+  a:hover {
+    color: var(--red);
   }
 
   .nav {

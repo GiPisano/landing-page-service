@@ -4,25 +4,35 @@
   <section id="about-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 about-img">
+        <div class="col-md-6 about-img g-5">
           <img src="../../assets/images/about-img.jpg" alt="" />
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-              tempore nostrum iste quidem ab maxime harum deserunt et officia
-              iure saepe aliquid fugiat animi, molestiae totam illum nemo quis
-              odio. Esse soluta magnam fugiat? Repudiandae quod earum nemo
-              eligendi minus vero atque adipisci laudantium, enim fugiat soluta
-              porro provident accusamus itaque eveniet consequatur iusto
-              consectetur ducimus quas esse, est rerum! Non omnis, laudantium
-              beatae possimus consequatur amet explicabo eveniet dolorem. Iusto
-              voluptatum tempora, officiis laborum harum non hic corrupti dolore
-              atque vitae incidunt accusantium dolor! Accusantium animi omnis
-              rerum voluptas?
-            </p>
-          </div>
+        <div class="col-md-6 g-5">
+          <p class="red">Scopri di più su di noi</p>
+          <h2>Chi Siamo</h2>
+          <p>
+            Benvenuti nel nostro magico mondo dove la programmazione incontra il
+            divertimento sfrenato! Offriamo corsi unici e stravaganti, guidati
+            da istruttori eccentrici che trasformano ogni lezione in
+            un'avventura indimenticabile. Unisciti a noi per scoprire il lato
+            più fantasioso del coding!
+          </p>
+          <p class="check-p">
+            <span><i class="fa-solid fa-circle-check fa-lg me-3"></i></span>
+            Esperti di programmazione che rendono ogni lezione uno spettacolo
+            creativo.
+          </p>
+          <p class="check-p">
+            <span><i class="fa-solid fa-circle-check fa-lg me-3"></i></span>
+            Corsi divertenti e coinvolgenti che trasformano l'apprendimento in
+            un'avventura.
+          </p>
+          <p class="check-p">
+            <span><i class="fa-solid fa-circle-check fa-lg me-3"></i></span>
+            Connettiti con appassionati di coding di tutto il mondo per
+            un'esperienza unica e divertente.
+          </p>
+          <div class="btn">SCOPRI DI PIÙ</div>
         </div>
       </div>
     </div>
@@ -31,7 +41,7 @@
 
 <style lang="scss" scoped>
 #about-section {
-  margin: 150px 0;
+  margin: var(--section-margin);
   .row {
     justify-content: center;
     align-items: center;
@@ -41,6 +51,19 @@
         border-radius: 50%;
       }
     }
+  }
+}
+h2 {
+  font-size: xxx-large;
+}
+.red {
+  color: var(--red);
+}
+// check-paragraph
+.check-p {
+  display: flex;
+  i {
+    color: var(--red);
   }
 }
 </style>

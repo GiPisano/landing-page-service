@@ -13,8 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 <template>
   <div class="container">
-    <p class="text-center">Valori aggiunti</p>
-    <h2 class="text-center">I Nostri Corsi Piacciono Perchè...</h2>
+    <div class="text-center my-4">
+      <p class="red">Valori aggiunti</p>
+      <h2>I Nostri Corsi Piacciono Perchè...</h2>
+    </div>
     <div class="row h-100">
       <div class="col-md-6 about-courses-text">
         <div>
@@ -148,16 +150,8 @@ document.addEventListener("DOMContentLoaded", () => {
   justify-content: center;
 }
 
-.btn {
-  background-color: var(--btn-color);
-  color: white;
-  cursor: pointer;
-  border-radius: 40px;
-}
-
-.btn:hover {
-  background-color: var(--red);
-  color: white;
+.container {
+  margin: var(--section-margin);
 }
 
 .card-header {

@@ -84,7 +84,7 @@ export default {
     align-items: center;
     justify-content: center;
     h1 {
-      font-size: 40px;
+      font-size: 6vh;
       font-weight: 200;
       width: 100%;
     }
@@ -121,6 +121,14 @@ export default {
 
 #circus-cards {
   .row {
+    .card:hover {
+      background-color: var(--green);
+      color: white;
+      .title {
+        color: white;
+      }
+    }
+
     div {
       padding: 30px 10px;
       display: flex;
@@ -135,6 +143,16 @@ export default {
       }
       .text {
         font-weight: 600;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #code-circus {
+    .row {
+      h1 {
+        font-size: 4vh;
       }
     }
   }
