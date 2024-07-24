@@ -196,15 +196,17 @@ export default {
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between">
-                <span>{{ course.category }}</span>
-                <span>{{ course.time }}</span>
+                <p>{{ course.category }}</p>
+                <p>{{ course.time }}</p>
               </div>
               <h5>{{ course.title }}</h5>
               <div class="d-flex">
                 <p>By: {{ course.author }}</p>
-                <span v-for="star in course.stars">
-                  <i class="fa-solid fa-star"></i>
-                </span>
+                <div class="stars">
+                  <span v-for="star in course.stars">
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -224,8 +226,8 @@ export default {
 
 .badge {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 20px;
   background-color: var(--red);
 }
 
@@ -246,5 +248,28 @@ export default {
 
 #online-courses {
   margin: var(--section-margin);
+  .card {
+    border: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    .card-header {
+      background-color: white;
+      border: 0;
+      img {
+        border-radius: 10px;
+      }
+    }
+    .card-body {
+      h5 {
+        margin-bottom: 1rem;
+      }
+      .stars {
+        padding-left: 10px;
+        i {
+          color: var(--green);
+        }
+      }
+    }
+  }
 }
 </style>
