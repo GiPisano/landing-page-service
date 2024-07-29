@@ -83,7 +83,7 @@ export default {
               </div>
               <div class="card-body">
                 <div class="img-review">
-                  <img :src="`src/assets/images/${review.img}`" alt="" />
+                  <img :src="`@/assets/${review.img}`" alt="" />
                 </div>
                 <div class="info">
                   <p class="name">{{ review.name }}</p>

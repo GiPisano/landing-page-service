@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 about-img g-5">
-          <img src="../../assets/images/about-img.jpg" alt="" />
+          <img src="@/assets/about-img.jpg" alt="" />
         </div>
         <div class="col-md-6 g-5">
           <p class="red">Scopri di più su di noi</p>

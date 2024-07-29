@@ -50,7 +50,7 @@ export default {
             </div>
           </div>
           <div class="col-md-6 g-4">
-            <img src="../../assets/images/billboard-img.png" alt="" />
+            <img src="@/assets/billboard-img.png" alt="" />
           </div>
         </div>
         <!-- CODE CIRCUS CARDS -->
@@ -73,7 +73,7 @@ export default {
 
 <style lang="scss" scoped>
 #code-circus {
-  background-image: url("../../assets/images/billboard-bg.png");
+  background-image: url("../../assets/billboard-bg.png");
   width: 100%;
   object-fit: contain;
 
