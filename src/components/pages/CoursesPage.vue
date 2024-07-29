@@ -186,7 +186,7 @@ export default {
         <div class="col-md-3" v-for="course in onlineCourses">
           <div class="card h-100">
             <div class="card-header">
-              <img :src="`@/assets/${course.img}`" alt="" />
+              <img :src="`src/assets/${course.img}`" alt="" />
               <p v-if="course.badge" class="badge">{{ course.badge }}</p>
             </div>
             <div class="card-body">

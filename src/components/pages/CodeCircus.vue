@@ -50,7 +50,7 @@ export default {
             </div>
           </div>
           <div class="col-md-6 g-4">
-            <img src="@/assets/billboard-img.png" alt="" />
+            <img src="src/assets/billboard-img.png" alt="" />
           </div>
         </div>
         <!-- CODE CIRCUS CARDS -->

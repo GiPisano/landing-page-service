@@ -125,7 +125,7 @@ export default {
       <div class="row">
         <div class="col social">
           <div>
-            <img src="@/assets/logo.png" alt="" />
+            <img src="src/assets/logo.png" alt="" />
           </div>
           <ul>
             <li v-for="social in socials">
