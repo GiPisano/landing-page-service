@@ -63,7 +63,7 @@ export default {
       <div class="col" v-for="techer in teachers">
         <div class="card h-100 text-center">
           <div class="card-header">
-            <img :src="`src/assets/${techer.img}`" alt="" />
+            <img :src="`/landing-page-service/${techer.img}`" alt="" />
             <div class="icons">
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-twitter"></i>

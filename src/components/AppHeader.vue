@@ -10,7 +10,7 @@
     </div>
     <div class="nav">
       <div class="img-logo">
-        <img src="src/assets/logo.png" alt="Logo" />
+        <img src="/logo.png" alt="Logo" />
       </div>
       <div class="container-btn">
         <button
